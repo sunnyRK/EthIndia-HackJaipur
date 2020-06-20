@@ -1,0 +1,37 @@
+.liquidity {
+  .add-liquidity {
+    margin: 10px 0 20px 0;
+    .liquidity-pairs {
+      height: 48px;
+      img {
+        height: 25px !important;
+        width: 25px !important;
+      }
+    }
+    .add-liquidity-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .remove-liquidity {
+    .pool-wrapper {
+      display: flex;
+      > .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+      }
+      .pool-dropdown {
+        width: 180px;
+        justify-content: center;
+      }
+    }
+    .remove-liquidity-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

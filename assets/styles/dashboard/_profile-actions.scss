@@ -1,0 +1,30 @@
+.profile-actions-wrapper {
+  width: 30%;
+  .login-info {
+    padding: 0 0 0 20px;
+    overflow: auto;
+    .address {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+    }
+    .biconomy-login-wrapper {
+      margin: 0;
+      .biconomy-login {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    .transact-wrapper {
+      .transact-button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        .transact-button {
+          min-width: 100px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+$left-content-width: 100px;
+
+.dashboard {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  .sidebar-wrapper {
+    border: unset !important;
+    border-radius: 0 !important;
+    width: 100%;
+    margin: 0;
+    .left-content {
+      width: $left-content-width !important;
+      background-color: rgb(30, 44, 55);
+    }
+    .pusher {
+      overflow-y: auto;
+      height: 100%;
+      width: calc(100% - #{$left-content-width}) !important;
+      transform: translate3d($left-content-width, 0, 0) !important;
+      padding: 20px;
+      display: flex;
+      .content-wrapper {
+        width: 70%;
+      }
+      // .basic {
+      //   height: 100%;
+      //   background-color: #f9fbfd; 
+      // }
+    }
+  }
+}

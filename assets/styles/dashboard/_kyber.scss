@@ -1,0 +1,45 @@
+.kyber {
+  .transfer-wrapper {
+    .transfer-content {
+      display: flex;
+      align-items: center;
+      .from-content, .to-content {
+        width: calc(50% - 20px);
+        .input {
+          width: 100%;
+          height: 50px;
+          background-color: #f6f7fa;
+          border: 1px solid transparent;
+          margin-bottom: 10px;
+          .from-token {
+            width: 105px;
+          }
+        }
+      }
+      .middle-content {
+        width: 80px;
+        align-self: flex-end;
+        height: 50px;
+        .change_arrow {
+          display: block;
+          margin: 5px auto 0;
+          width: 25px;
+          height: 25px;
+          background-image: url("../../icons/change.svg");
+          cursor: pointer;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .transfer-footer {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 0;
+      .transfer-button {
+        height: 45px;
+        width: 180px;
+        font-size: 16px;
+      }
+    }
+  }
+}

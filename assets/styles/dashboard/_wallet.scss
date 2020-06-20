@@ -1,0 +1,65 @@
+.wallet {
+  .balance {
+    .balance-options {
+      display: flex;
+      align-items: center;
+      margin: 0 0 12px;
+      height: 45px;
+    }
+    .current-balance {
+      .token-balance {
+        margin: 0 0 15px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.6rem;
+        color: dodgerblue;
+      }
+    }
+    .check-balance-button {
+      margin: 10px 0 0;
+      height: 40px;
+    }
+  }
+  .transfer-wrapper {
+    .transfer-content {
+      display: flex;
+      align-items: center;
+      .from-content, .to-content {
+        width: calc(50% - 20px);
+        .input {
+          width: 100%;
+          height: 50px;
+          background-color: #f6f7fa;
+          border: 1px solid transparent;
+          margin-bottom: 10px;
+          .from-token {
+            width: 105px;
+          }
+        }
+      }
+      .middle-content {
+        width: 80px;
+        align-self: flex-end;
+        height: 50px;
+        .transfer_arrow {
+          display: block;
+          margin: 5px auto 0;
+          width: 13px;
+          height: 13px;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNCAwTDUuMjggMS4xMiA5Ljc2IDUuNkgwdjEuNmg5Ljc2bC00LjQ4IDQuNDhMNi40IDEyLjhsNi40LTYuNHoiIGZpbGw9IiNFRjgxMDIiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+          cursor: pointer;
+        }
+      }
+    }
+    .transfer-footer {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 0;
+      .transfer-button {
+        height: 45px;
+        width: 180px;
+        font-size: 16px;
+      }
+    }
+  }
+}
