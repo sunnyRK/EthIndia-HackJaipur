@@ -18,18 +18,18 @@ contract wallet is walletStorage{
         _;
     }
     
-    // Biconomy Login 
-    function biconomyLogin(address userAddress, address _biconomyAddress) isLoggedIn(userAddress) external {
-        biconomyAddressMappings[userAddress] = _biconomyAddress;
-        biconomyAddressLoggedIn[userAddress] = true;
+    // wallet Login 
+    function walletLogin(address userAddress, address _walletAddress) isLoggedIn(userAddress) external {
+        walletAddressMappings[userAddress] = _walletAddress;
+        walletAddressLoggedIn[userAddress] = true;
     }
     
     function isLoggedInUserADdress(address userAddress) public view returns(bool) {
-        return biconomyAddressLoggedIn[userAddress];
+        return walletAddressLoggedIn[userAddress];
     } 
     
-    function getBiconomyAddress(address userAddress) public view returns(address) {
-        return biconomyAddressMappings[userAddress];
+    function getwalletAddress(address userAddress) public view returns(address) {
+        return walletAddressMappings[userAddress];
     }     
     
     // Add new Token Support to wallet

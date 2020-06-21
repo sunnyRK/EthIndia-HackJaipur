@@ -15,8 +15,8 @@ contract walletStorage {
     mapping(address => uint256[]) public transactionIndexesToSender;
     mapping(bytes32 => address) public tokens;
     
-    mapping(address => address) public biconomyAddressMappings;
-    mapping(address => bool) public biconomyAddressLoggedIn;
+    mapping(address => address) public walletAddressMappings;
+    mapping(address => bool) public walletAddressLoggedIn;
     
     IERC20 public ERC20Interface;
     Transfer[] public transactions;
