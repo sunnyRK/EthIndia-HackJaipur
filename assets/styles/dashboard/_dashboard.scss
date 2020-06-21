@@ -21,7 +21,7 @@ $left-content-width: 100px;
       padding: 20px;
       display: flex;
       @media (max-width: 650px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         .content-wrapper {
           width: 100% !important;
         }

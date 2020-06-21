@@ -1,33 +1,29 @@
 import React from 'react';
 
-import {
-  Header, Segment, Icon, Image, Menu, Sidebar,
-} from 'semantic-ui-react';
+import { Segment, Menu, Sidebar, Icon } from 'semantic-ui-react';
 import TransactionHistory from './transaction-history/TransactionHistoryContainer';
 import ProfileActions from './profile-actions/ProfileActionsContainer';
 import WalletContainer from './wallet/WalletContainer';
 import KyberContainer from './kyber/KyberContainer';
 
-// import EthIcon from '../assets/icons/eth.png';
-
 const menuItems = [
   {
-    icon: 'wallet.png',
+    icon: 'google wallet',
     label: 'Wallet',
     content: <WalletContainer />,
     showTransactionHistory: true,
   },
   {
-    icon: 'kyber.svg',
+    icon: 'chevron right',
     label: 'Kyber',
     content: <KyberContainer />,
     showTransactionHistory: true,
-  }
+  },
 ];
 
 export default ({
-  children, onMenuItemClick, activeIndex, metamaskAddress, onDeposit, onWithdraw, handleChangeCollateralTokenSymbol
-  // showTransactionHistory,
+  onMenuItemClick, activeIndex, metamaskAddress, onDeposit,
+  onWithdraw,
 }) => (
   <Sidebar.Pushable as={Segment} className="sidebar-wrapper">
     <Sidebar
@@ -42,10 +38,7 @@ export default ({
       {
             menuItems.map((item, index) => (
               <Menu.Item as="a" key={index} onClick={() => onMenuItemClick(index)} active={index === activeIndex}>
-                {/* <Icon name={item.icon} /> */}
-                <div className="sidebar-icon-wrapper">
-                  <img src={`/static/${item.icon}`} className="sidebar-icon" alt="wallet-icon" />
-                </div>
+                <Icon name={item.icon} />
                 <span>{item.label}</span>
               </Menu.Item>
             ))
