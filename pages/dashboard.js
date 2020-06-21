@@ -5,7 +5,7 @@ import WalletContainer from '../components/wallet/WalletContainer';
 import KyberContainer from '../components/kyber/KyberContainer';
 import Sidebar from '../components/Sidebar';
 
-import web3 from '../biconomyProvider/realweb3';
+import web3 from '../web3Provider/realweb3';
 
 const menuItems = [
   {

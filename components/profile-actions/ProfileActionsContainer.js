@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ProfileActions from './ProfileActions';
-import realweb3 from '../../biconomyProvider/realweb3';
+import realweb3 from '../../web3Provider/realweb3';
 class ProfileActionsContainer extends Component {
 
   constructor(props) {

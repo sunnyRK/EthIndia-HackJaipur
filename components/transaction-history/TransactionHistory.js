@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Card} from 'semantic-ui-react';
 import Axios from 'axios';
-import web3 from '../../biconomyProvider/realweb3';
+import web3 from '../../web3Provider/realweb3';
 
 class TransactionHistory extends Component {
 

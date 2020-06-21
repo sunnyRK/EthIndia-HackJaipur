@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import Wallet from './Wallet';
 import { getERCContractInstance } from './wallet-helper/walletinstance';
-import web3 from '../../biconomyProvider/realweb3';
+import web3 from '../../web3Provider/realweb3';
 import { Router } from '../../routes';
 
 import {

@@ -7,8 +7,7 @@ import TransactionHistory from './transaction-history/TransactionHistoryContaine
 import ProfileActions from './profile-actions/ProfileActionsContainer';
 
 export default ({
-  menuItems, children, onMenuItemClick, activeIndex, onBiconomyLogin,
-  biconomyAddress, biconomyLoginLoading, metamaskAddress, onDeposit, onWithdraw, handleChangeCollateralTokenSymbol
+  menuItems, children, onMenuItemClick, activeIndex, metamaskAddress, onDeposit, onWithdraw, handleChangeCollateralTokenSymbol
   // showTransactionHistory,
 }) => (
   <Sidebar.Pushable as={Segment} className="sidebar-wrapper">
@@ -45,9 +44,6 @@ export default ({
             </div>
             <div className="profile-actions-wrapper">
               <ProfileActions
-                onBiconomyLogin={onBiconomyLogin}
-                biconomyAddress={biconomyAddress}
-                biconomyLoginLoading={biconomyLoginLoading}
                 metamaskAddress={metamaskAddress}
                 // onDeposit={onDeposit}
                 onWithdraw={onWithdraw}

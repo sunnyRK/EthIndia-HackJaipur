@@ -1,10 +1,9 @@
 {
-  "name": "Biconomy-projects",
+  "name": "Hackjaipur-projects",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@biconomy/mexa": "^1.5.3",
     "axios": "^0.19.2",
     "bignumber.js": "^9.0.0",
     "css-loader": "^3.5.3",

@@ -1,4 +1,4 @@
-const web3 = require('../../biconomyProvider/realweb3');
+const web3 = require('../../web3Provider/realweb3');
 const BN = require('bignumber.js');
 
 // Connecting to ropsten infura node

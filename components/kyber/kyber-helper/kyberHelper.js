@@ -2,7 +2,7 @@ import {
    KYBER_NETWORK_PROXY_ADDRESS, convertInWei, TokenInfoArray,
     KYBER_NETWORK_PROXY_CONTRACT, getSrcTokenContract
 } from '../../../config/kyberconfig/kyberconfig';
-import web3 from "../../../biconomyProvider/realweb3";
+import web3 from "../../../web3Provider/realweb3";
 
 // Function to obtain conversion rate between src token and dst token
 export async function getRates(SRC_TOKEN_ADDRESS,DST_TOKEN_ADDRESS,SRC_QTY_WEI) {

@@ -7,7 +7,7 @@ import {
   MAX_ALLOWANCE, convertInWei,
   getSrcTokenContract, KYBER_NETWORK_PROXY_ADDRESS, TokenInfoArray,
 } from '../../config/kyberconfig/kyberconfig';
-import web3 from "../../biconomyProvider/realweb3";
+import web3 from "../../web3Provider/realweb3";
 const BN = require('bignumber.js');
 
 class KyberContainer extends Component {
