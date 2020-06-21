@@ -12,7 +12,7 @@ class TransactionHistory extends Component {
 
     async componentDidMount(){  
         const accounts = await web3.eth.getAccounts();
-        Axios.get('http://localhost:4000/api/get')
+        Axios.get('https://instcrypt-node-api.herokuapp.com/api/getAllTransfer')
         .then(res => {
             if(res.statusText == "OK") {
   

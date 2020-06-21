@@ -13,7 +13,7 @@ export async function addTransaction(web3address, tokenSymbol, to, value, hash) 
             "tokenSymbol": tokenSymbol,
         }
 
-        Axios.post('http://localhost:4000/api/create', models)
+        Axios.post('https://instcrypt-node-api.herokuapp.com/api/createTransfer', models)
             .then(res => {
                 if(res.statusText == "OK") {
                     console.log("Transaction added")
