@@ -1,5 +1,11 @@
 .profile-actions-wrapper {
   width: 30%;
+  @media (max-width: 650px) {
+    width: 100%;
+    .login-info {
+      padding: 0 !important;
+    }
+  }
   .login-info {
     padding: 0 0 0 20px;
     overflow: auto;
@@ -8,13 +14,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
       font-weight: 600;
-    }
-    .biconomy-login-wrapper {
-      margin: 0;
-      .biconomy-login {
-        width: 100%;
-        justify-content: center;
-      }
     }
     .transact-wrapper {
       .transact-button-wrapper {

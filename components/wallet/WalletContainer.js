@@ -102,7 +102,7 @@ class WalletContainer extends Component {
               });
             }
           } else {
-            toast.error('Not Enough Deposit crypto in biconomy account address. Plase deposit crypto by Deposit section.', {
+            toast.error('Not Enough Balance', {
               position: toast.POSITION.TOP_RIGHT,
             });
           }

@@ -21,8 +21,8 @@ export const TokenInfoArray = [
           "token_symbol":"ZIL",
           "token_contract_address":"0xAb74653cac23301066ABa8eba62b9Abd8a8c51d6",
           "decimals": 18
-      },'TKN': {
-          "token_symbol":"TKN",
+      },'SAI': {
+          "token_symbol":"SAI",
           "token_contract_address":"0xC4375B7De8af5a38a93548eb8453a498222C4fF2",
           "decimals": 18
       }

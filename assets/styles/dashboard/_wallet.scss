@@ -24,8 +24,14 @@
     .transfer-content {
       display: flex;
       align-items: center;
+      @media (max-width: 1024px) {
+        flex-direction: column;;
+      }
       .from-content, .to-content {
         width: calc(50% - 20px);
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
         .input {
           width: 100%;
           height: 50px;
@@ -33,7 +39,10 @@
           border: 1px solid transparent;
           margin-bottom: 10px;
           .from-token {
-            width: 105px;
+            width: 116px;
+          }
+          input {
+            width: calc(100% - 116px) !important;
           }
         }
       }
@@ -41,6 +50,10 @@
         width: 80px;
         align-self: flex-end;
         height: 50px;
+        @media (max-width: 1024px) {
+          transform: rotate(90deg);
+          align-self: center;
+        }
         .transfer_arrow {
           display: block;
           margin: 5px auto 0;

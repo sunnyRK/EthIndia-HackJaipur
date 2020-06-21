@@ -17,7 +17,7 @@ export default ({
       key: 'dai',
       text: (
         <div>
-          <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-512.png" className="ui avatar image" alt="coin" />
+          <img src="/static/dai.svg" className="ui avatar image" alt="coin" />
           DAI
         </div>
       ),
@@ -27,7 +27,7 @@ export default ({
       key: 'weth',
       text: (
         <div>
-          <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-512.png" className="ui avatar image" alt="coin" />
+          <img src="/static/eth.svg" className="ui avatar image" alt="coin" />
           WETH
         </div>
       ),
@@ -37,7 +37,7 @@ export default ({
       key: 'bat',
       text: (
         <div>
-          <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-512.png" className="ui avatar image" alt="coin" />
+          <img src="/static/bat.svg" className="ui avatar image" alt="coin" />
           BAT
         </div>
       ),
@@ -46,7 +46,7 @@ export default ({
       key: 'knc',
       text: (
         <div>
-          <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-512.png" className="ui avatar image" alt="coin" />
+          <img src="/static/knc.svg" className="ui avatar image" alt="coin" />
           KNC
         </div>
       ),
@@ -56,7 +56,7 @@ export default ({
       key: 'zil',
       text: (
         <div>
-          <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/etherium_eth_ethcoin_crypto-512.png" className="ui avatar image" alt="coin" />
+          <img src="/static/zil.png" className="ui avatar image" alt="coin" />
           ZIL
         </div>
       ),

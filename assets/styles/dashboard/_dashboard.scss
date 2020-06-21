@@ -20,6 +20,12 @@ $left-content-width: 100px;
       transform: translate3d($left-content-width, 0, 0) !important;
       padding: 20px;
       display: flex;
+      @media (max-width: 650px) {
+        flex-direction: column;
+        .content-wrapper {
+          width: 100% !important;
+        }
+      }
       .content-wrapper {
         width: 70%;
       }

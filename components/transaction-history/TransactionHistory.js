@@ -23,13 +23,20 @@ class TransactionHistory extends Component {
                       const TransactionDetails = res.data[j];
                       if (accounts[0] === TransactionDetails.web3from) {
                         var hashLink = "https://kovan.etherscan.io/tx/"+TransactionDetails.transactionHash;
-                        items[count++] =  {
-                            header: (<a href={hashLink}>Transaction Hash: {TransactionDetails.transactionHash}</a>),
-                            meta: "Recipient Address: " + TransactionDetails.to,
-                            description: 'Amount: ' + TransactionDetails.value + " wei " + TransactionDetails.tokenSymbol,      
-                            fluid: true,
-                            style: { overflowWrap: 'break-word' }
-                        };
+                        items[count++] = {
+                          header: (
+                            <>
+                              <span className="sub-heading">Transaction hash</span><br/>
+                              <div className="transaction-address">
+                                <a href={hashLink} target="blank">{TransactionDetails.transactionHash}</a>
+                              </div>
+                              <div className="sub-heading token-pair-address">Recipient Address: </div>
+                              <div className="transaction-address"><a href="">{TransactionDetails.to}</a></div>
+                            </>
+                          ),
+                          description: 'Amount: ' + TransactionDetails.value + " wei " + TransactionDetails.tokenSymbol,
+                          fluid: true,
+                        }
                       }
                   }
               }
@@ -44,18 +51,22 @@ class TransactionHistory extends Component {
               });
             } else {
                 console.log(res);
-                // alert("Error");
+                this.setState({
+                  waitMessage: 'Something went wrong',
+                });
             }
         })
         .catch(err => {
             console.log(err);
-            // alert("Catch");
+            this.setState({
+              waitMessage: 'Something went wrong',
+            });
         })
     }
 
     render() {
       return (
-        <div className="transaction-history card">
+        <div className="transaction-history">
           <h4>Transaction History</h4>
           {
             this.state.items.length === 0 ? (
