@@ -17,6 +17,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
     "react-toastify": "^5.5.0",
+    "sass": "^1.26.8",
     "semantic-ui-react": "^0.88.2",
     "solc": "^0.5.12",
     "truffle-hdwallet-provider": "0.0.3",
